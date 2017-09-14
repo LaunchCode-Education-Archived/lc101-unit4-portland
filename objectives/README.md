@@ -35,14 +35,18 @@ Job Readiness
 * Create and leverage portfolios
 
 Group Project
-* Complete your first project iteration
+
 * Set up project development environment
 * Define project user stories
 * Define project user interface wireframes
+* Complete your first project iteration
 
 Technical
+
 * Create JavaScript for web browser environments
 * Create basic JavaScript methods and objects 
+* Setting up github repositories for collaborative teamwork
+* Using github issues for project tracking of feature development.
 * Special topics in front-end development (driven from group project requirements)
 
 
@@ -53,8 +57,10 @@ Job Readiness
 * Understand and practice effective Technical interview techniques
 
 Group Project
+
 * Review effective code collaboration techniques with git branching and merging
-* Create first working prototype
+* Plan second iteration
+* Start first working prototype
 
 Technical
 * Use rigorous process for class and method definition
@@ -65,17 +71,49 @@ Technical
 
 Job Readiness
 
-* Understand and practice effective Technical interview techniques
+* Understand and practice soft skills in interviews
 
 Group Project
-* Review effective code collaboration techniques with git branching and merging
-* Create first working prototype
+
+* Finish first working prototype
+* Finish second iteration
+* Conduct iteration retrospectives
 
 Technical
-* Use rigorous process for class and method definition
-* Use rigorous method definition process in technical interview pair programming and whiteboarding
-* Use rigorous method definition process to develop unit tests
+
+* Understand Microinteractions in UX
+* Use JavaScript to manipulate the Document Object Model
+* Use JavaScript to perform in-browser form guidance and validation
 
 ### Week 5
 
+Job Readiness
+
+* Understand and practice business ettiquette
+
+Group Project
+
+* Apply agile project management to trim backlog and finish on schedule
+* Plan third and final iteration
+
+Technical
+
+* (topics in algorithms and data structures)
+* Special topics in full-stack development (driven from group project requirements)
+
 ### Week 6
+
+Job Readiness
+
+* Practice, practice, practice interview technique
+
+Group Project
+
+* Finish project
+* Finish third iteration
+* Conduct iteration retrospective
+
+Technical
+
+* (topics in algorithms and data structures)
+* Special topics in full-stack development (driven from group project requirements)
