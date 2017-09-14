@@ -19,6 +19,7 @@ Group Project
 * Determine group project goals, teams, topics and product requirements
 * Describe the stages of effective team formation: "forming, storming, norming, performing," and other models
 * Establish group project team communication norms
+* Plan first iteration (project planning and system design)
 
 Technical
 
@@ -59,7 +60,7 @@ Job Readiness
 Group Project
 
 * Review effective code collaboration techniques with git branching and merging
-* Plan second iteration
+* Plan second iteration (prototype development)
 * Start first working prototype
 
 Technical
@@ -93,8 +94,8 @@ Job Readiness
 
 Group Project
 
-* Apply agile project management to trim backlog and finish on schedule
-* Plan third and final iteration
+* Apply agile project management to trim backlog and finish on schedule - what's important to the customer? What's a minimum viable product?
+* Plan third and final iteration (prototype refinement and first customer ship)
 
 Technical
 
@@ -109,9 +110,9 @@ Job Readiness
 
 Group Project
 
-* Finish project
 * Finish third iteration
 * Conduct iteration retrospective
+* Finish project
 
 Technical
 
