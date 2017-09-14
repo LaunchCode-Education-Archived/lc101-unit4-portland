@@ -64,9 +64,9 @@ Group Project
 * Start first working prototype
 
 Technical
-* Use rigorous process for class and method definition
-* Use rigorous method definition process in technical interview pair programming and whiteboarding
-* Use rigorous method definition process to develop unit tests
+* Use step-by-step process for class and method definition - the Rigorous Method Creation Process (RMCP)
+* Use the RMCP in technical interview pair programming and whiteboarding
+* Use the RMCP to develop unit tests
 
 ### Week 4
 
