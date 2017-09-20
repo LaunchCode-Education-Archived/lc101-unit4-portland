@@ -11,5 +11,4 @@ http://education.launchcode.org/lc101-unit4-portland/classes/index.html
 http://education.launchcode.org/lc101-unit4-portland/index.html
 http://education.launchcode.org/lc101-unit4-portland/issues/index.html
 http://education.launchcode.org/lc101-unit4-portland/objectives/index.html
-http://education.launchcode.org/lc101-unit4-portland/studios/index.html
 http://education.launchcode.org/lc101-unit4-portland/sitemap.html
