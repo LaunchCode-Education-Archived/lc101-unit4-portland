@@ -15,7 +15,7 @@ Job Readiness
 
 Group Project
 
-* Describe basic principles of Agile project management 
+* Describe basic principles of Agile project management
 * Determine group project goals, teams, topics and product requirements
 * Describe the stages of effective team formation: "forming, storming, norming, performing," and other models
 * Establish group project team communication norms
@@ -45,7 +45,7 @@ Group Project
 Technical
 
 * Create JavaScript for web browser environments
-* Create basic JavaScript methods and objects 
+* Create basic JavaScript methods and objects
 * Setting up github repositories for collaborative teamwork
 * Using github issues for project tracking of feature development.
 * Special topics in front-end development (driven from group project requirements)
@@ -82,9 +82,9 @@ Group Project
 
 Technical
 
-* Understand Microinteractions in UX
-* Use JavaScript to manipulate the Document Object Model
-* Use JavaScript to perform in-browser form guidance and validation
+* Describe and implement binary and linear search
+* Explain the difference between different measures of efficiency: constant, linear, logarithmic, polynomial, exponential
+* Use big-O notation to describe the efficiency of an algorithm as an upper bound
 
 ### Week 5
 
@@ -99,7 +99,10 @@ Group Project
 
 Technical
 
-* (topics in algorithms and data structures)
+* Describe the concept of a recursive algorithm/function
+* Implement basic recursive algorithms
+* Describe common sorting algorithms: bubble sort, insertion sort, merge sort
+* Provide big-O efficiency for common sorting algorithms
 * Special topics in full-stack development (driven from group project requirements)
 
 ### Week 6
@@ -116,5 +119,10 @@ Group Project
 
 Technical
 
-* (topics in algorithms and data structures)
+* Describe and visualize arrays as contiguous storage structures of fixed size
+* Describe drawbacks to using arrays (problems with over/under allocation)
+* Describe and visualize linked lists as non-contiguous data structures of flexible size
+* Define random and sequential access, along with positives and negatives of each; state which type of access arrays and linked lists allow
+* Identify which previously-encountered data structures are either arrays (Java arrays) or linked lists (Python lists, Java ArrayLists)
+* Describe efficiency of basic operations for arrays and linked lists in big-O form (read, insert, remove)
 * Special topics in full-stack development (driven from group project requirements)
