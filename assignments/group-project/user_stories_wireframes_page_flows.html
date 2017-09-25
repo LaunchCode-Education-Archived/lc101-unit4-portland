@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title> :: Unit 4</title>
+
+        <link rel="stylesheet" href="http://education.launchcode.org/lc101-unit4-portland/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/lc101-unit4-portland/css/highlight.launchcode.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/lc101-unit4-portland/css/main.css">
+        <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <ul class="nav navbar-nav">
+
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                        <ul class="dropdown-menu">
+                                                            <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/lc101-unit4-portland/classes/">
+                                        Classes
+                                    </a>
+                                </li>
+                                                            <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/lc101-unit4-portland/studios/">
+                                        Studios
+                                    </a>
+                                </li>
+                                                            <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/lc101-unit4-portland/assignments/">
+                                        Assignments
+                                    </a>
+                                </li>
+                                                            <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/lc101-unit4-portland/objectives/">
+                                        Objectives
+                                    </a>
+                                </li>
+                                                            <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/lc101-unit4-portland/about/">
+                                        About This Unit
+                                    </a>
+                                </li>
+                                                            <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/lc101-unit4-portland/issues/">
+                                        Reporting Issues
+                                    </a>
+                                </li>
+                                                        <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">Search This Site</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                
+            </ul>
+
+            <div>
+                <a class="navbar-brand site-title navbar-center" href="http://education.launchcode.org/lc101-unit4-portland/">
+                    <h1>Unit 4</h1>
+                </a>
+            </div>
+
+            <div class="nav navbar-nav navbar-right">
+                <a class="navbar-brand dabomb" href="http://education.launchcode.org/lc101-unit4-portland/"></a>
+            </div>
+
+        </header>
+
+        <!-- Search Modal -->
+        <div id="modalSearch" class="modal fade" role="dialog">
+           <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                   <h4 class="modal-title">Search Unit 4</h4>
+                </div>
+                <div class="modal-body">
+                    <script>
+                      (function() {
+                        var cx = "014657181352409571810:nbe9z-ikdso";
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:search></gcse:search>
+                </div>
+                <div class="modal-footer">
+                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+           </div>
+        </div>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                <section id="content" class="col-sm-offset-2 col-sm-8">
+                                        <h1></h1>
+                    <h1 id="specifying-a-web-application">Specifying a web application <br /> <em>With user stories, wireframes, and page flow diagrams.</em></h1>
+<p>Web applications, like all products, exist to help people reach their goals. There is no other reason.</p>
+<h2 id="user-stories">User stories</h2>
+<p>It starts with user stories. For the purposes of this group project, we can limit our user stories to just those high-level stories that have a clear user goal and a clear value that results from interacting with the site.</p>
+<p>User stories in the capstone have a specific format in this exact structure:</p>
+<ul>
+<li>Who is using the feature (AKA the <em>role</em>), starting with the key phrase &quot;As a&quot;</li>
+<li>The reason why the feature exists (AKA the <em>goal</em> or the business value), starting with the key phrase &quot;In order to&quot;</li>
+<li>The outcome they expect, starting with the key phrase &quot;I want&quot;</li>
+</ul>
+<p>Sometimes the role is first, some times the goal is. Sometimes the goal is hard for customers to articulate, but it is essential for understanding.</p>
+<p>Here are some examples:</p>
+<pre><code>As a salesperson, 
+in order to find the customers that need attention, 
+I want to search for my customers by their first and last names.
+
+As a user closing the application, 
+in order to make fewer mistakes that cause loss of work,
+I want to be prompted to save if I have made any change in my data since the last save.</code></pre>
+<h3 id="scenarios">Scenarios</h3>
+<p>Each user story breaks down into <em>scenarios</em> which are the specific steps the user takes to accomplish the user story. In this group project, we have a specific way of writing scenarios. There are three types of steps: 1) Givens, 2) Whens, and 3) Thens.</p>
+<ol start="0">
+<li><em>Givens</em> describe what things look like before the user does something. These are preconditions.</li>
+<li><em>Whens</em> describe the key action that the user does</li>
+<li><em>Thens</em> describe how the system responds.</li>
+<li><em>Ands</em> or <em>buts</em> extend the first three.</li>
+</ol>
+<p>Here's a big meta-example of a product feature descibed as a user story which is then detailed in a scenario:</p>
+<pre><code>Feature: Some terse yet descriptive text of what is desired
+
+  In order to realize a named business value
+  As an explicit system actor
+  I want to gain some beneficial outcome which furthers the goal
+
+  This is a short paragraph that adds useful
+  details in some way or another that people 
+  reviewing the feature or implementing the 
+  code will find useful
+
+  Scenario: Some determinable business situation
+    Given some precondition
+      And some other precondition
+    When some action by the actor
+      And some other action
+      And yet another action
+    Then some testable outcome is achieved
+      And something else we can check happens too</code></pre>
+<p>You use user stories and scenarios to help you design the wireframes and page flows through the application. Each user story involves one or more screens of your app.</p>
+<p>Why are scenarios cool?</p>
+<p>If you use a tool like Cucumber you can directly translate the scenarios that implement a user story into end-to-end tests. You use capybara or selenium-web driver to simulate the users interaction with the web browser as they use your application. (For an old fart like me, this &quot;specifications are tests&quot; thing is a simply <em>amazing</em>, <em>incredible</em> aspect of modern software development. Take my word for it because there's no way to describe living in a cave and eating dirt to somebody who grew up with houses, running water and refrigerators.)</p>
+<h3 id="acceptance-tests">Acceptance tests</h3>
+<p>You use user stories and scenarios to guide development.</p>
+<p>You also use the user stories and scenarios to define your <em>acceptance tests</em>. An acceptance test takes the perspective of the user, manipulates your application, and then verifies that the application produces the desired output. </p>
+<p>In this group project, you are required to have user stories and scenarios that can be used for manual testing. You do not need to create automatied end-to-end tests.</p>
+<h3 id="no-plan-survives-contact-with-the-customer">No plan survives contact with the customer</h3>
+<p>Only write enough user stories to sketch the minimum required product features for the client and get started. Don't get bogged down over-specifying the product. You will learn much more about what the product is as you build it and let customers use it.</p>
+<h3 id="dont-out-run-your-supply-lines">Don't out-run your supply lines</h3>
+<p>On the other hand, don't code <em>ANYTHING</em> that doesn't have a user story. Don't code <em>ANYTHING</em> that isn't mapped out in a scenario. </p>
+<h2 id="wireframes">Wireframes</h2>
+<p>Wireframes are low fidelity mockups of what your pages will look like. By low fidelity, we mean simple rectangles instead of fully styled forms and fields, gibberish instead of real text, and rough controls.  We avoid those unnecessary details like color palette, detailed styling and other things that are very important to the feel of the website, but do not influence it's functionality. We're focusing first on functionality.</p>
+<p>Usually there is one wireframe per page. You may have more than one wireframe for a particular page in the following situations:</p>
+<ul>
+<li>
+<p>If the page is a responsive design where the layout of the page changes based on the width of the screen and the viewport</p>
+</li>
+<li>If the page layout changes in response to Ajax transactions where new page elementsi are added or page elements are obscured based on user input</li>
+</ul>
+<p>You can create wireframes with almost any tool, including paper and pencil. You can use any number of graphical applications. In this group project, you can use post-its on a whiteboard. Just take a picture to use in your README.</p>
+<p>When you get faster and more facile with HTML and CSS, you can create wireframes in code, like the professionals we've interviewed. </p>
+<h3 id="speed-is-of-the-essence">Speed is of the essence</h3>
+<p>The important thing is to do them quickly, using them as sketches to facilitate the creative process. As you do scenarious, wireframes, and page flows, you learn about the shape of your design and your design changes quickly. You need to be able to create new wireframes just as quickly.  Some times the best thing to do is to sit down with the client, a ream of blank paper, and a bunch of pencils then just scribble until you understand the client and you are both happy with the general idea.</p>
+<p>In this group project, we receommend that youo <em>don't</em> use a fancy-pants graphical editor. That takes too much time.</p>
+<h2 id="page-flow-diagrams">Page flow diagrams</h2>
+<p>It used to be that you saw a lot of site maps: hierarchical organizational charts that showed how the pages were connected to each other by simple hierarchical hyperlinks. Each page appeared once and there was only one path into a page and a simple paths out of the page to its child pages. Those days are gone.</p>
+<p>Page flow diagrams reflect the actions a user takes to accomplish a particular goal. They map more closely to user stories and scenarios. There is at least one page flow for every user story where the user performs certain actions on the site and achieves some desired result.</p>
+<p>As a result, some pages appear more than once in the entire set of diagrams if they are involved with more than one user story. This is somewhat inefficient from the standpoint of how many page symbols you use on a particular diagram, but that is far outweighed by the clarity you game in showing what the customer must do to get value from your product.</p>
+<p>It also gives you some immediate, visual indication of how many clicks and operations are required to accomplish a meaningful task and get useful value out of your site. You need to minimize the amount of effort a customer takes to accomplish their goal.</p>
+                                    </section>
+
+            </div>
+        </main>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="http://education.launchcode.org/lc101-unit4-portland/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://education.launchcode.org/lc101-unit4-portland/js/highlight.pack.js"></script>
+        <script type="text/javascript" src="http://education.launchcode.org/lc101-unit4-portland/js/libgif.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+
+                // Syntax highlighting
+                hljs.configure({ displayLabels: true });
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', "UA-78748330-9", 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+    </body>
+</html>

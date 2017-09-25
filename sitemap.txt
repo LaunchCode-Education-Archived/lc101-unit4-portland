@@ -1,6 +1,9 @@
 http://education.launchcode.org/lc101-unit4-portland/about/index.html
+http://education.launchcode.org/lc101-unit4-portland/assignments/group-project/index.html
+http://education.launchcode.org/lc101-unit4-portland/assignments/group-project/user_stories_wireframes_page_flows.html
 http://education.launchcode.org/lc101-unit4-portland/assignments/index.html
 http://education.launchcode.org/lc101-unit4-portland/class-prep/1/index.html
+http://education.launchcode.org/lc101-unit4-portland/class-prep/1/searching-and-skimming.html
 http://education.launchcode.org/lc101-unit4-portland/class-prep/2/index.html
 http://education.launchcode.org/lc101-unit4-portland/class-prep/3/index.html
 http://education.launchcode.org/lc101-unit4-portland/class-prep/4/index.html
