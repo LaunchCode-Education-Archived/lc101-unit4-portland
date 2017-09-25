@@ -9,28 +9,30 @@ Listed below are the competencies you should demonstrate by the time you've comp
 
 ### Week 1
 
-Job Readiness
+Job Track
 
-* Understand techniques for successful business networking
+* Understand and practice business ettiquette
 
 Group Project
 
-* Describe basic principles of Agile project management
 * Determine group project goals, teams, topics and product requirements
-* Describe the stages of effective team formation: "forming, storming, norming, performing," and other models
+* Describe basic principles of Agile project management
+* Describe the stages of effective teams: "forming, storming, norming, performing," and other models
 * Establish group project team communication norms
 * Plan first iteration (project planning and system design)
 
 Technical
 
-* Describe the general principles of software testing
-* Create a basic acceptance test plan from project requirements
+* Indentifying technical topcs from project requirements
+* Setting up github repositories for collaborative teamwork
+* Using github issues for project tracking of feature development.
+* Introduction to JavaScript
 
 
 ### Week 2
 
 
-Job Readiness
+Job Track
 
 * Create and customize resumes
 * Create and leverage portfolios
@@ -46,16 +48,15 @@ Technical
 
 * Create JavaScript for web browser environments
 * Create basic JavaScript methods and objects
-* Setting up github repositories for collaborative teamwork
-* Using github issues for project tracking of feature development.
 * Special topics in front-end development (driven from group project requirements)
 
 
 ### Week 3
 
-Job Readiness
+Job Track
 
-* Understand and practice effective Technical interview techniques
+* Understand and practice soft skills in interviews
+
 
 Group Project
 
@@ -64,15 +65,18 @@ Group Project
 * Start first working prototype
 
 Technical
+
+* Describe the general principles of software testing
+* Create a basic acceptance test plan from project requirements
 * Use step-by-step process for class and method definition - the Rigorous Method Creation Process (RMCP)
 * Use the RMCP in technical interview pair programming and whiteboarding
 * Use the RMCP to develop unit tests
 
 ### Week 4
 
-Job Readiness
+Job Track
 
-* Understand and practice soft skills in interviews
+* Understand and practice business networking
 
 Group Project
 
@@ -88,9 +92,9 @@ Technical
 
 ### Week 5
 
-Job Readiness
+Job Track
 
-* Understand and practice business ettiquette
+* Understand and practice effective Technical interview techniques
 
 Group Project
 
@@ -107,15 +111,15 @@ Technical
 
 ### Week 6
 
-Job Readiness
+Job Track
 
-* Practice, practice, practice interview technique
+* Practice, practice, practice interview technique in mock interviews
 
 Group Project
 
 * Finish third iteration
 * Conduct iteration retrospective
-* Finish project
+* Project presentations
 
 Technical
 

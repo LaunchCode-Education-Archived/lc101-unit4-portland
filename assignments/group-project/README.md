@@ -52,6 +52,12 @@ See below for details about each of these deliverables.
 |5| Third sprint: MVP underway<br>User stories updated | 
 |6| Product demos & group presentations |
 
+Teams as a whole are responsible for organizing their work and delivering on this schedule. It's completely understandable and expected that some team members will have the opportunity and resources to deliver "more" than their teammates and some team members will not have the time or circumstances to contributed as much. 
+
+However, all team members are expected to sign up for work in good faith, to deliver what they signed up to deliver, and to alert their team, their TF, and their instructor if they need help or need to adjust their work assignment. Things change; communication is constant.
+
+TF's and the instructor are responsible for discerning which members of the team are performing well and which members need additional help and coaching.
+
 # Deliverables
 
 ## Elevator pitch 
@@ -100,7 +106,7 @@ You must check in all code and merge it to master for it to be considered for re
 
 We recommend developer branching. Frequent commits are your friend. Frequent pushes of code to your own branch on github allow your teammates, mentor, and instructor to see your code and help you.
 
-We would like to see associating items in your issue tracker with commits. When you finish committing your work and merge it to main, use the appropriate technique to clost the issue you are working on.
+We would like to see associating items in your issue tracker with commits. When you finish committing your work and merge it to master, use the appropriate technique to close the issue you are working on.
 
 We do not recommend forking or the use of pull requests on this project.
 
