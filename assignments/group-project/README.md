@@ -17,7 +17,7 @@ When you are done, you will be able to
 
 Individuals have the option of pitching a project to the class.  
 
-If necessary, the instructor will make team assignments. There will b
+If necessary, the instructor will make team assignments. 
 
 Projects are **strongly encouraged** to have from three to five team members. Having partners greatly increases your chances of succeeding.
 
