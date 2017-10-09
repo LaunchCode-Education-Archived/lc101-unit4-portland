@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Rigorous Method Creation Process :: Unit 4</title>
+
+        <link rel="stylesheet" href="http://education.launchcode.org/lc101-unit4-portland/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/lc101-unit4-portland/css/highlight.launchcode.css">
+        <link rel="stylesheet" href="http://education.launchcode.org/lc101-unit4-portland/css/main.css">
+        <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css">
+    </head>
+    <body id='page-rigorous-method-creation-process'>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <ul class="nav navbar-nav">
+
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                        <ul class="dropdown-menu">
+                                                            <li class="active lc-button">
+                                    <a href="http://education.launchcode.org/lc101-unit4-portland/classes/">
+                                        Classes
+                                    </a>
+                                </li>
+                                                            <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/lc101-unit4-portland/studios/">
+                                        Studios
+                                    </a>
+                                </li>
+                                                            <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/lc101-unit4-portland/assignments/">
+                                        Assignments
+                                    </a>
+                                </li>
+                                                            <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/lc101-unit4-portland/objectives/">
+                                        Objectives
+                                    </a>
+                                </li>
+                                                            <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/lc101-unit4-portland/about/">
+                                        About This Unit
+                                    </a>
+                                </li>
+                                                            <li class=" lc-button">
+                                    <a href="http://education.launchcode.org/lc101-unit4-portland/issues/">
+                                        Reporting Issues
+                                    </a>
+                                </li>
+                                                        <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">Search This Site</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                
+            </ul>
+
+            <div>
+                <a class="navbar-brand site-title navbar-center" href="http://education.launchcode.org/lc101-unit4-portland/">
+                    <h1>Unit 4</h1>
+                </a>
+            </div>
+
+            <div class="nav navbar-nav navbar-right">
+                <a class="navbar-brand dabomb" href="http://education.launchcode.org/lc101-unit4-portland/"></a>
+            </div>
+
+        </header>
+
+        <!-- Search Modal -->
+        <div id="modalSearch" class="modal fade" role="dialog">
+           <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                   <h4 class="modal-title">Search Unit 4</h4>
+                </div>
+                <div class="modal-body">
+                    <script>
+                      (function() {
+                        var cx = "014657181352409571810:nbe9z-ikdso";
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:search></gcse:search>
+                </div>
+                <div class="modal-footer">
+                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+           </div>
+        </div>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                <section id="content" class="col-sm-offset-2 col-sm-8">
+                                        <h1>Rigorous Method Creation Process</h1>
+                    <h1 id="rigorous-method-creation-process-rmcp">Rigorous Method Creation Process (RMCP)</h1>
+<img align="right" src="tumblr_lnjmhwjL3y1qk6fum.jpg">
+<p><em>By the way, people ask me, is &quot;RMCP&quot; a real named thing in computer science? Nope. This is simply good design technique established while developing software over decades and while conducting hundreds of technical interviews. As for the name... I just like Mounties (The &quot;RCMP&quot;). [Note 1]</em></p>
+<p>This is a structured method for creating functions or methods (I'll use those terms interchangably). It's useful during program development, but it also could be used in a technical interview to quickly white board up a solution to a problem. Our theme is: &quot;Design Before Doing.&quot; Otherwise known as “Don’t code yet!&quot;</p>
+<p>This method helps to make sure that you cover all aspects of function design. It depends on the idea that you can completely describe any function in terms of &quot;input-process-output.&quot;</p>
+<p><img src="ipo1.png" alt="Iinput-Process-Output" /></p>
+<ol>
+<li>
+<p>First consider the <strong>inputs</strong>: What type, format, domain are expected? How many are required or optional? </p>
+</li>
+<li>
+<p>Next, nail down the <strong>outputs</strong>, their format and range of values.</p>
+</li>
+<li>Finally, develop the function's <strong>process</strong> in a top-down fashion, using the princple of &quot;write the code you wish you had.&quot;</li>
+</ol>
+<p>By focusing on the inputs and outputs first, you define the function's <em>interface</em>, its contract with the rest of the system.</p>
+<p><img src="ipo2.png" alt="Function interface" /> </p>
+<p>This method fosters a design conversation between designer for the function and the customer of the function, whether that's the designers of other functions in the system <em>or</em> a techincal interviewer.</p>
+<h2 id="using-this-method-to-win-at-interview-whiteboarding">Using this method to win at interview whiteboarding</h2>
+<p>You can use this method during technical inteviews.</p>
+<p>Let's say somebody says to you, &quot;Give me a function that takes string and then finds all the words in that string containing the given character.&quot;</p>
+<p>This is your requirement spec. You can see the IP model immediately:</p>
+<ol>
+<li>What are the inputs? (a string of words and a character)</li>
+<li>What are the outputs? (a string of words)</li>
+<li>
+<p>What is the process? (some sort of search that examines each word)</p>
+<p>But it's not yet detailed enough to write code. For instance, what should the function do:</p>
+</li>
+<li>...to report errors?</li>
+<li>...if the character isn't found?</li>
+<li>...if the inputs are bad (empty, missing, or not strings at all )?</li>
+<li>...if the input is huge?</li>
+<li>
+<p>...if the character set is not ASCII?</p>
+<p>So, ask questions until you are sure of the requirement details. (This is actually called requirement elicitation and is a common process on a development team.) Use this checklist to make sure you know what you're doing before you do it. Use it to organize your thinking and demonstrate that you have an rigorous approach to design.</p>
+</li>
+</ol>
+<h1 id="step-one-the-gazinta---what-are-the-inputs">Step one: The Gazinta - What are the inputs?</h1>
+<p>The first step focuses on the inputs - the material the function needs to deal with.</p>
+<ol>
+<li>
+<p><strong>Type</strong>: What are the types of the values?</p>
+</li>
+<li>
+<p><strong>Domain</strong>: What variety of values can we expect? Positive integers? All real numbers? The strings of any length? Any particular character set?</p>
+</li>
+<li>
+<p><strong>Cardinality</strong>: How many inputs are there? If there are several, are they aggregated in a collection like a tuple or array? </p>
+</li>
+<li>
+<p><strong>Value/Reference</strong>: Are the inputs passed by value or by reference? If by reference, are they intended to be modified or not?</p>
+</li>
+<li>
+<p><strong>External/internal</strong>: Which of the inputs are provided as parameters? Which are part of the class (of which this method is a member)? Are there any inputs coming from somewhere else?</p>
+</li>
+<li>
+<p><strong>Optionality</strong>: Are any of the inputs optional?</p>
+</li>
+<li>
+<p><strong>Legality</strong>: Are there any known illegal or false values that we know will arise? Some times this is known as “noisy” data, where some or many of the inputs need to be filtered out or ignored.</p>
+</li>
+<li><strong>Uniformity</strong>: Are there some values that require special processing (sometimes called “edge cases&quot; or &quot;corner cases”)? For example, if the input is a range of both positive and negative integers, zero is often a special case, especially if that input is going to be used as a divisor.</li>
+</ol>
+<p>In white boarding, when there's a lot going on and it's hard to remember long lists, it’s important to get the first few (Type, Domain, Cardinality). The latter ones are less likely to be critical to answering the question and having a good time with the interview.</p>
+<p>In system development, be sure to go through the entire list.</p>
+<p>In test-driven development, once you know what the function should expect to recieve, start to think about what should happen if some other function supplies the wrong thing in any of these many dimensions.</p>
+<h1 id="step-two-the-gozouta---what-are-the-outputs">Step Two: The Gozouta - What are the outputs?</h1>
+<p>The second step focuses on output. Not necessariy their values, but their types, formats, and delivery method.</p>
+<ol>
+<li>
+<p><strong>Type</strong>: What type of values should be returned? What data structure should be used? What object class?</p>
+</li>
+<li>
+<p><strong>Range</strong>: What range of values are expected? Only negative whole numbers?</p>
+</li>
+<li>
+<p><strong>Error reporting</strong>:  are there values within the designated type and expected range of output that can be used indicate indicate errors, or do we need to use exceptions?</p>
+</li>
+<li>
+<p><strong>Side effects</strong>: Are there any outputs of that aren’t in the return value? Does the function modify the Document Object Model, for example. Note: Don’t design in side effects if you don’t need to. Always return results.</p>
+</li>
+<li>
+<p><strong>Modified parameters</strong>: Is the routine supposed to modify some parameter that was passed by reference?</p>
+</li>
+<li><strong>Format</strong>: Is there a particular format or template to be used?</li>
+</ol>
+<h1 id="step-three-test-cases-are-now-available">Step Three: Test cases are now available</h1>
+<p>At this point, when white boarding, you should write down a small set of sample inputs, each with their expected output. For simple functions, your massive human brain can probably derive the outputs from the inputs by inspection. In more complicated algorthims, you may have to know more about the process used in the function (which we discuss later). Write down what you can.</p>
+<p>Pay special attention to include the error, edge, and corner cases. Verify the correctness of your sample with your interviewer. Call the sample set, “our test cases.”</p>
+<p>At this point in test-driven design, you’ve got all the possible test cases. Write them down as comments or “on-hold” tests. Later, when you’re ready to start coding, you can enable them one by one and code to the test.</p>
+<h1 id="step-four-the-guts---top-down-process-design">Step Four: The guts - Top down process design</h1>
+<p>Now it’s time to write down your routine’s pseudocode. In interview situations, this is where everybody starts writing for loops in broken syntax and gets lost. Instead, follow some top-down steps and avoid getting too detailed too early.</p>
+<h2 id="strategy-first">Strategy first</h2>
+<p>Think in general terms about strategy first.</p>
+<ol>
+<li>
+<p>Am I going to be iterating over a collection? Over more than one collection?</p>
+</li>
+<li>
+<p>Am I going to be calculating the result all in one go, or am I going to be accumulating the result as I work through things?</p>
+</li>
+<li>
+<p>What sort of intermediate results am I going to have to keep track of?</p>
+</li>
+<li>
+<p>Is the data I’ve been given in the most efficient form possible, or would it be better if I reformat the data for easier processing? For example, if I’m looking through an array, would it be better if I sorted it first?</p>
+</li>
+<li>If I run into an error condition, what’s my exit strategy? Do I bail right away or do I have more to do before I return? Should the routine have several exit points or just one? Are there values should be accumulating as I go?</li>
+</ol>
+<h2 id="verb-phrases">Verb phrases</h2>
+<p>Next, <strong>write down pseudocode, using verb phrases</strong>. You don’t need to do this in order. You can start with the most important steps first, or the tricky steps first. Then you can fill in the steps needed to prepare for those the ones you’ve written. </p>
+<p>For example, let’s say you are given an array of integers and you have to return an array of the integers that are “missing.&quot; The heart of your process is a step like, “loop through the whole array and if we discover there’s a missing value, put that value in the result array.” Sure, at this point you don’t know how you’re going to &quot;discover there’s a missing value” yet, but you know this looping step is going to be required.</p>
+<h2 id="the-happy-path">The happy path</h2>
+<p><strong>Write pseudocode for “the happy path” first.</strong> This is where everything is ready, everything works, and there are no errors. This shouldn't be very hard because, well, when we're starting out, most of us <em>only</em> consider the happy path.</p>
+<h2 id="write-the-code-you-want-descriptive-function-names">Write the code you want: descriptive function names</h2>
+<p><strong>Some of these pseudocode verb phrases can be immediately converted into function calls</strong> by putting hyphens between the words and adding some trailing parenthesis.</p>
+<p>Example:</p>
+<ol>
+<li>
+<p>“compare current value with target” becomes &quot;compare-current-value-with-target()”</p>
+</li>
+<li>Then, depending on the language you’re using, it might later become “compare(current_value, target)” or “current_value.compare(target)” or who knows what - that comes later.</li>
+</ol>
+<p>Sometimes you’ll see this called, <strong>“write the code you wish you had”</strong> which means, <strong>assume there’s a function somewhere that does what you want</strong>. Maybe you’ll end up writing it, maybe you’ll find it in the standard library or some package, maybe you’ll find some open source software that does what you need.</p>
+<h2 id="test-your-pseudocode">Test your pseudocode</h2>
+<p>Use your test cases and sample input/output data to check your pseudocode. When designing by yourself, take a few moments before diving into the code to think about your approach to the problem. Save yourself some time.</p>
+<p>When whiteboarding, say it out loud as you walk through the code. In some cases, the interviewer may even stop you there once she see’s you’ve got a good handle on things.</p>
+<h2 id="from-algorithms-to-data-structures">From algorithms to data structures</h2>
+<p>Think about your internal temporary variables and data structures. </p>
+<ol>
+<li>
+<p>What’s the best way to store stuff while you’re working on the problem? </p>
+</li>
+<li>
+<p>Are there objects already defined that can help? </p>
+</li>
+<li>
+<p>Are some kinds of data structures better for this case than others? For example, can you index into an array or should you index with a key into a hash?</p>
+</li>
+<li>
+<p>Do the parts of your data structures have names?</p>
+</li>
+<li>Are your data structures and function calls parts of some sort of object?</li>
+</ol>
+<h2 id="fill-in-the-functions">Fill in the functions</h2>
+<p><strong>Write code using function calls</strong>. Write the code you wish you had. Even simple steps like assignment statements might benefit from a function call if you aren't exactly sure where the value is coming from.</p>
+<p><code>aVariable = calculateTheCorrectValue()</code></p>
+<p><strong>Recursively define the function contents</strong>. For each function, look inside and define how it works. Use the same approach as you did to the main function, writing pseudocode and the functions you wish you had. </p>
+<p>Interview algorthims rarely require many nestedfunctions, but real world systems may have functions that call functions that call functions that...</p>
+<h2 id="make-sure-its-readable">Make sure it's readable</h2>
+<p><strong>Refactor the simple functions into in-line code</strong>. It's perfectly fine to turn a complicated statement (especially regexs) into a well-named function. But some times, the few lines in the function are clear and self-explanatory. They don't need to be summarized and abstracted into a function call. That is, unless the code will be reused several places. Then the function is always better than copy-paste.</p>
+<h1 id="whiteboarding-checklist">Whiteboarding checklist</h1>
+<p>When you’re using the process in a interview/whiteboarding situation, simplify. Inputs, outputs, psuedocode, functions, data structures.</p>
+<ol>
+<li>
+<p><strong>Set up your work area</strong>. Find some markers that work. Find an eraser. Break your available whiteboard space into three areas: <em>Code</em> (the biggest area), <em>Notes</em>, and <em>Tests</em>. Write small. If you are doing a screensharing session, open a file in the text editor and create a block comment. Put the <em>Notes</em> and <em>Tests</em> headings in the block. Your code will start below the comment.</p>
+</li>
+<li>
+<p><strong>Write down the problem</strong>. Yes, actually write it down in the <em>Notes</em> area. Don’t assume you’ll remember it. Use this as a time to get used to writing on the whiteboard.</p>
+</li>
+<li>
+<p>Ask about the <strong>inputs</strong>. Write down a list of the answers. Write down example inputs in the <em>Tests</em> areas.</p>
+</li>
+<li>
+<p>Ask about the <strong>outputs</strong>. Write down a list of the answers. Match the inputs in the <em>Tests</em> area with their resulting outputs</p>
+</li>
+<li>
+<p>Ask about the <strong>process</strong>. Write down the process as a one liner of pseudocode. Make it a single line comment in the <em>Code</em> area. Think about the Single Responsibility Principle and make sure your method only does what is required, nothing more. If the question</p>
+</li>
+<li>
+<p><strong>Write the tests</strong>, That is, write down any other sample inputs and outputs you can think of in the <em>Tests</em> corner of the board. If you are in a screen-sharing session, put them in the main block of comments.</p>
+</li>
+<li>
+<p>Write <strong>the method signature</strong> up at the top of the Code area as needed. Make sure the method name matches your understanding.</p>
+</li>
+<li>
+<p>Write down <strong>the return statement</strong> down at the bottom.</p>
+</li>
+<li>
+<p>Under the method signature, start writing down the names of your <strong>internal variables</strong>. Write them as phrases, then add dashes inbetween the words. Don’t try to write syntax.</p>
+</li>
+<li>
+<p><strong>Leave some space</strong> for more variables, later.</p>
+</li>
+<li>
+<p>As your first list of pseudocode, write “check inputs and return any errors”</p>
+</li>
+<li>
+<p><strong>Write the process steps as psuedocode</strong>. At the whiteboard, make sure your penmanship is readable. It's worth it to practice writing at a whiteboard if you can before the interview.</p>
+</li>
+<li>
+<p><strong>Test your psuedocode</strong> by taking some sample inputs and verbally stepping through your process to make sure you end up the the expected return value.</p>
+</li>
+<li>
+<p><strong>Create function calls</strong> recursively from the top down, using the syntax of your chosen language.</p>
+</li>
+<li><strong>Write statements</strong> in correct syntax. If you're doing python, you might draw vertical helper lines at the current indentation level, then erase them. It's easy to write at crazy angles and wierd indents if you're thinking about something else.</li>
+</ol>
+<h1 id="test-driven-design-checklist">Test-Driven-Design Checklist</h1>
+<ol>
+<li>
+<p>Create your test and app files using the appropriate naming conventions. Lean on your templates and snippets. If your IDE can generate test file skeltons, use it. Use the test file for your <em>Tests</em> area and the app file for your <em>Notes</em> and <em>Code</em> areas.</p>
+</li>
+<li>
+<p>Thoroughly characterize the inputs using the entire list in <em>Step One</em>, above. Write down everything you know about your inputs in a comment block in your testing area.</p>
+</li>
+<li>
+<p>Characterize the <strong>outputs</strong> and write that down in the test file. </p>
+</li>
+<li>
+<p><strong>Write down typical values</strong> for both inputs and outputs. </p>
+</li>
+<li>
+<p><strong>Create fixtures or generators for data</strong> but just add a few representative values at a time and add more as you write more tests. Don't write anything you don't immediately use. Or, said differently, write only what you need <em>right now</em>, for the next test.</p>
+</li>
+<li>
+<p><strong>Write the first test for the happy path</strong>. Give the routine easy-to-handle inputs that should result in a normal return values.</p>
+</li>
+<li>
+<p><strong>Write the code to make the test pass</strong>. </p>
+<ol>
+<li>In the app file, match the method signature you used in your test</li>
+<li>Write only the code you need to make this particular scenario work</li>
+<li>Get the code working (and the test passing) as fast as possible. Keep it simple.</li>
+</ol>
+</li>
+<li>
+<p><strong>Mock up external services</strong>. As you develop your function, it may need to call external services. These may be other parts of your system or third-party systems. You don't want your tests to depend upon these services working correctly. In some case, you may not have built them yet. So you create <em>test doubles</em> of various sorts to stand in for them during your test. These are typically objects created in your test framework that have the same signature and interface as the service but they only return one or two expected values. This is a <a href="https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da" target="_blank">complicated topic</a> so do as little as possible and keep moving forward. While whiteboarding, identify external services and state you will either presume they work or mock them up as necessary.</p>
+</li>
+<li>
+<p><strong>Add tests with more input parameter values</strong>, updating your fixtures as necessary. Add a few across the entire domain of possible inputs that your method should be able to handle. These tests should pass (unless your algorithm needs revising).</p>
+</li>
+<li>
+<p><strong>Add tests for illegal parameter values</strong>, then write the code to handle them. This will define how your method reports errors. If it throws exceptions, this is the time to set them up. In some languages changing the signature to throw exceptions like this will require you to refactor your earlier tests to catch exceptions, even if thoses tests won't involve any error conditions. </p>
+</li>
+<li>
+<p><strong>(Language-specific)</strong> <strong>Add tests with the wrong number of or wrong type of parameters</strong>, then write the code to make them pass. This abuse of your method signture may not be possible in your language, or your language may throw errors by itself. But in some languages you can pass the wrong number of parameters or the wrong type of parameters. Write one test for each variation of incorrect parameters, writing the necessary code for each one. This is where you can prevent many types of run-time errors, so don't skimp.</p>
+</li>
+<li>
+<p><strong>Fearlessly refactor</strong> and <strong>lean on git</strong>. Commit your code between tests. This, combined with the small set of regression tests you are creating, will allow you to change your code, adding functions, re-writing algorithms, doing the needful, without concern of breaking something. As they say, &quot;move fast and break things.&quot; Be confident that your tests will tell you if you make a mistake. And, if things get too messed up, throw away your code, back up to the last commit, and quickly try again. Move fast.</p>
+</li>
+<li>
+<p><strong>Focus on side effects</strong>, which may require a different way of checking results. Your test code may need to mock up the external datastructures being modified.</p>
+</li>
+<li><strong>Focus on exception passing</strong> Do any of the sub-functions or services your method uses throw exceptions? Will your method catch them or pass them along? How will you test to verify that this is working?</li>
+</ol>
+<h1 id="summary">Summary</h1>
+<p>There's a lot here to remember. Your best bet is to go back over the main input-process-output sequence and make your own checklist, then use it as you practice function design or practice your whiteboard technique.</p>
+<hr />
+<h2 id="note-1-on-mounties-as-role-models">Note 1: On Mounties as role models</h2>
+<p>A venerable organization based on the principles of honor, bravery, and persistance, the Royal Canadian Mounted Police (RCMP) have been heroes of mine since childhood. However, their process of incorporating women into their ranks, started in 1974, has been problematical. It has unfortunate parallels to the tech industry.</p>
+<p>The RCMP recently recognized that it suffered from a history where &quot;... many women in uniform were sexually assaulted, physically assaulted, harassed, discriminated, and bullied.&quot; They are making changes and have set asside <a href="http://dailyhive.com/montreal/rcmp-sexual-assault-compensation" target="_blank">$100M to address damages</a>. I expect them to once again operate in accordance with their principles and rise to their best selves. They're Canadians after all, eh?</p>
+<p>This is yet another example of an organization with the highest ideals and standards <em>still</em> having a problem doing the right thing while claiming to encourage gender diversity. For reasons I still don't understand, it's difficult to do this well. But with honor and persistance, it is possible.</p>
+<p><img src="5adb5136548e42693cd10d835444fc1f.jpg" alt="Mounties on parade" title="Check your privilege, Mountie" /></p>
+                                    </section>
+
+            </div>
+        </main>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="http://education.launchcode.org/lc101-unit4-portland/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://education.launchcode.org/lc101-unit4-portland/js/highlight.pack.js"></script>
+        <script type="text/javascript" src="http://education.launchcode.org/lc101-unit4-portland/js/libgif.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+
+                // Syntax highlighting
+                hljs.configure({ displayLabels: true });
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', "UA-78748330-9", 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+    </body>
+</html>

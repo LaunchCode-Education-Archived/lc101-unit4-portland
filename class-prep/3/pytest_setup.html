@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Sitemap :: Unit 4</title>
+        <title>Pytest setup :: Unit 4</title>
 
         <link rel="stylesheet" href="http://education.launchcode.org/lc101-unit4-portland/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://education.launchcode.org/lc101-unit4-portland/css/highlight.launchcode.css">
         <link rel="stylesheet" href="http://education.launchcode.org/lc101-unit4-portland/css/main.css">
         <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css">
     </head>
-    <body id='page-sitemap'>
+    <body id='page-pytest-setup'>
 
         <header class="navbar navbar-default navbar-fixed-top">
 
@@ -21,7 +21,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle glyphicon glyphicon-menu-hamburger" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
                         <ul class="dropdown-menu">
-                                                            <li class=" lc-button">
+                                                            <li class="active lc-button">
                                     <a href="http://education.launchcode.org/lc101-unit4-portland/classes/">
                                         Classes
                                     </a>
@@ -109,8 +109,92 @@
             <div class="row">
 
                 <section id="content" class="col-sm-offset-2 col-sm-8">
-                                        <h1>Sitemap</h1>
-                    <ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/index.html'>LC101 Unit 4: Portland</a></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/about/index.html'>About This Unit</a></li></ul></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/assignments/index.html'>Assignments</a></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/assignments/group-project/user_stories_wireframes_page_flows.html'></a></li><li><a href='http://education.launchcode.org/lc101-unit4-portland/assignments/group-project/index.html'>Group Project</a></li></ul></li></ul></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/class-prep/index.html'></a></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/class-prep/1/searching-and-skimming.html'></a></li><li><a href='http://education.launchcode.org/lc101-unit4-portland/class-prep/1/index.html'>Class 1 Prep</a></li></ul></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/class-prep/2/index.html'>Class 2 Prep</a></li></ul></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/class-prep/3/index.html'>Class 3 Prep</a></li><li><a href='http://education.launchcode.org/lc101-unit4-portland/class-prep/3/pytest_setup.html'>Pytest setup</a></li><li><a href='http://education.launchcode.org/lc101-unit4-portland/class-prep/3/rcmp.html'>Rigorous Method Creation Process</a></li></ul></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/class-prep/4/index.html'>Class 4 Prep</a></li></ul></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/class-prep/5/index.html'>Class 5 Prep</a></li></ul></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/class-prep/6/index.html'>Class 6 Prep</a></li></ul></li></ul></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/classes/index.html'>Classes</a></li></ul></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/issues/index.html'>Reporting Issues</a></li></ul></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/objectives/index.html'>Objectives</a></li></ul></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/studios/index.html'>Studios</a></li><li><ul><li><a href='http://education.launchcode.org/lc101-unit4-portland/studios/1/index.html'>Studio - Week 1</a></li></ul></li></ul></li><li><a href='sitemap.html'>Sitemap</a></li></ul>
+                                        <h1>Pytest setup</h1>
+                    <p>Pytest is a testing framework for python.</p>
+<h2 id="references">References</h2>
+<ul>
+<li>
+<p><a href="https://docs.pytest.org/en/latest/" target="_blank">The pytest website</a></p>
+</li>
+<li><a href="https://pragprog.com/book/bopytest/python-testing-with-pytest" target="_blank">&quot;Python Testing with pytest&quot; book</a></li>
+</ul>
+<h1 id="install-process">Install process</h1>
+<p>You can (and should) add pytest to your project's conda virtual environment. However, to get started, here's a review of how to create a new conda virtual environment with everything you need to play around.</p>
+<p>Step 1 - create a conda virtual environment with latest stable versions of pytest:</p>
+<p><code>conda create -n use-pytest pytest</code></p>
+<p>Step 2 - Enable your new pytest environment</p>
+<p><code>source activate use-pytest</code></p>
+<p>Here's an example transcript for your reference:</p>
+<pre><code>[14:37][zim@kali:~/Desktop/LaunchCode/unit4/testing]
+$ conda create -n use-pytest pytest
+Fetching package metadata .........
+Solving package specifications: .
+
+Package plan for installation in environment /Users/zim/miniconda3/envs/use-pytest:
+
+The following NEW packages will be INSTALLED:
+
+    certifi:    2016.2.28-py36_0
+    openssl:    1.0.2l-0
+    pip:        9.0.1-py36_1
+    py:         1.4.34-py36_0
+    pytest:     3.2.1-py36_0
+    python:     3.6.2-0
+    readline:   6.2-2
+    setuptools: 36.4.0-py36_1
+    sqlite:     3.13.0-0
+    tk:         8.5.18-0
+    wheel:      0.29.0-py36_0
+    xz:         5.2.3-0
+    zlib:       1.2.11-0
+
+Proceed ([y]/n)? y
+
+xz-5.2.3-0.tar 100% |######################################################################################################| Time: 0:00:00   1.98 MB/s
+zlib-1.2.11-0. 100% |######################################################################################################| Time: 0:00:00  11.01 MB/s
+python-3.6.2-0 100% |######################################################################################################| Time: 0:00:01   9.08 MB/s
+certifi-2016.2 100% |######################################################################################################| Time: 0:00:00  17.98 MB/s
+py-1.4.34-py36 100% |######################################################################################################| Time: 0:00:00  25.72 MB/s
+setuptools-36. 100% |######################################################################################################| Time: 0:00:00  16.29 MB/s
+pytest-3.2.1-p 100% |######################################################################################################| Time: 0:00:00   8.21 MB/s
+#
+# To activate this environment, use:
+# &gt; source activate use-pytest
+#
+# To deactivate this environment, use:
+# &gt; source deactivate use-pytest
+#
+
+[14:37][zim@kali:~/Desktop/LaunchCode/unit4/testing]
+$ source activate use-pytest
+(use-pytest)
+[14:38][zim@kali:~/Desktop/LaunchCode/unit4/testing]
+$ pytest --version
+This is pytest version 3.2.1, imported from /Users/zim/miniconda3/envs/use-pytest/lib/python3.6/site-packages/pytest.py
+(use-pytest)
+[14:38][zim@kali:~/Desktop/LaunchCode/unit4/testing]</code></pre>
+<p>Once your virtual environment is tunning, verify proper operation and review the command line options:</p>
+<p><code>pytest --help</code></p>
+<h2 id="for-more-information">For more information</h2>
+<p>See <a href="https://docs.pytest.org/en/latest/getting-started.html" target="_blank">Installation and Getting Started</a></p>
+<h1 id="running-tests">Running tests</h1>
+<p>At the appropriate level in your project, simply invoke <code>pytest</code> to find and run all the tests.</p>
+<p><code>pytest</code></p>
+<p>Without arguments, pytest looks in your current working directory and recursively looks in all subdirectories and runs any test files  (files whose names starting with &quot;test_&quot; or ending with &quot;_test&quot;) that it finds.</p>
+<p>To make your test code discoverable by <code>pytest</code>, use the following naming conventions::</p>
+<ul>
+<li>
+<p>Test files should be named test_<em>something</em>.py or <em>something</em>_test.py.</p>
+</li>
+<li>
+<p>Test methods and functions should be named test_<em>something</em>().</p>
+</li>
+<li>Test classes should be named Test<em>Something</em>.</li>
+</ul>
+<p>To run a specific test in a specific file, use a double colon</p>
+<p><code>pytest filepath::testname</code></p>
+<h2 id="using-tests-in-an-ide">Using tests in an IDE</h2>
+<p>If you are using an IDE like PyCharm, running tests is both easier (because the IDE is designed to do so) and harder (because the user interface is more complicated and ideosyncratic.) Correctly configured, your IDE can run tests continuously in the background and make your life wonderfully easy.</p>
                                     </section>
 
             </div>
