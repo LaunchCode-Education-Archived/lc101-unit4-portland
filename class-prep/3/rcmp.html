@@ -110,9 +110,8 @@
 
                 <section id="content" class="col-sm-offset-2 col-sm-8">
                                         <h1>Rigorous Method Creation Process</h1>
-                    <h1 id="rigorous-method-creation-process-rmcp">Rigorous Method Creation Process (RMCP)</h1>
-<img align="right" src="tumblr_lnjmhwjL3y1qk6fum.jpg">
-<p><em>By the way, people ask me, is &quot;RMCP&quot; a real named thing in computer science? Nope. This is simply good design technique established while developing software over decades and while conducting hundreds of technical interviews. As for the name... I just like Mounties (The &quot;RCMP&quot;). [Note 1]</em></p>
+                    <img align="right" src="tumblr_lnjmhwjL3y1qk6fum.jpg">
+<p><em>There are a lot of opinions in this article. For example, people ask me, is &quot;RMCP&quot; a real named thing in computer science? Nope. This is simply good design technique established while developing software over decades and while conducting hundreds of technical interviews. As for the name... I just like Mounties (The &quot;RCMP&quot;). [Note 1]</em></p>
 <p>This is a structured method for creating functions or methods (I'll use those terms interchangably). It's useful during program development, but it also could be used in a technical interview to quickly white board up a solution to a problem. Our theme is: &quot;Design Before Doing.&quot; Otherwise known as “Don’t code yet!&quot;</p>
 <p>This method helps to make sure that you cover all aspects of function design. It depends on the idea that you can completely describe any function in terms of &quot;input-process-output.&quot;</p>
 <p><img src="ipo1.png" alt="Iinput-Process-Output" /></p>
@@ -131,23 +130,23 @@
 <h2 id="using-this-method-to-win-at-interview-whiteboarding">Using this method to win at interview whiteboarding</h2>
 <p>You can use this method during technical inteviews.</p>
 <p>Let's say somebody says to you, &quot;Give me a function that takes string and then finds all the words in that string containing the given character.&quot;</p>
-<p>This is your requirement spec. You can see the IP model immediately:</p>
+<p>This is your requirement spec. You can see the IPO model immediately:</p>
 <ol>
-<li>What are the inputs? (a string of words and a character)</li>
-<li>What are the outputs? (a string of words)</li>
 <li>
-<p>What is the process? (some sort of search that examines each word)</p>
-<p>But it's not yet detailed enough to write code. For instance, what should the function do:</p>
+<p>What are the inputs? (A string of words and a character)</p>
 </li>
-<li>...to report errors?</li>
-<li>...if the character isn't found?</li>
-<li>...if the inputs are bad (empty, missing, or not strings at all )?</li>
-<li>...if the input is huge?</li>
 <li>
-<p>...if the character set is not ASCII?</p>
-<p>So, ask questions until you are sure of the requirement details. (This is actually called requirement elicitation and is a common process on a development team.) Use this checklist to make sure you know what you're doing before you do it. Use it to organize your thinking and demonstrate that you have an rigorous approach to design.</p>
+<p>What are the outputs? (A string of words)</p>
 </li>
+<li>What is the process? (Some sort of search that examines each word)</li>
 </ol>
+<p>But it's not yet detailed enough to write code. For instance, what should the function do:</p>
+<p>...to report errors?</p>
+<p>...if the character isn't found?</p>
+<p>...if the inputs are bad (empty, missing, or not strings at all )?</p>
+<p>...if the input is huge?</p>
+<p>...if the character set is not ASCII?</p>
+<p>So, use this RMCP process to ask questions until you are sure of the requirement details. (This is actually called requirement elicitation and is a common process on a development team.) Use this checklist to make sure you know what you're doing before you do it. Use it to organize your thinking and demonstrate that you have an rigorous approach to design.</p>
 <h1 id="step-one-the-gazinta---what-are-the-inputs">Step one: The Gazinta - What are the inputs?</h1>
 <p>The first step focuses on the inputs - the material the function needs to deal with.</p>
 <ol>
