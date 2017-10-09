@@ -3,11 +3,9 @@ title: Rigorous Method Creation Process
 currentMenu: classes
 ---
 
-# Rigorous Method Creation Process (RMCP)
-
 <img align="right" src="tumblr_lnjmhwjL3y1qk6fum.jpg">
 
-*By the way, people ask me, is "RMCP" a real named thing in computer science? Nope. This is simply good design technique established while developing software over decades and while conducting hundreds of technical interviews. As for the name... I just like Mounties (The "RCMP"). [Note 1]*
+*There are a lot of opinions in this article. For example, people ask me, is "RMCP" a real named thing in computer science? Nope. This is simply good design technique established while developing software over decades and while conducting hundreds of technical interviews. As for the name... I just like Mounties (The "RCMP"). [Note 1]*
 
 
 This is a structured method for creating functions or methods (I'll use those terms interchangably). It's useful during program development, but it also could be used in a technical interview to quickly white board up a solution to a problem. Our theme is: "Design Before Doing." Otherwise known as “Don’t code yet!"
@@ -34,21 +32,27 @@ You can use this method during technical inteviews.
 
 Let's say somebody says to you, "Give me a function that takes string and then finds all the words in that string containing the given character."
 
-This is your requirement spec. You can see the IP model immediately:
+This is your requirement spec. You can see the IPO model immediately:
 
-1. What are the inputs? (a string of words and a character)
-1. What are the outputs? (a string of words)
-1. What is the process? (some sort of search that examines each word)
+1. What are the inputs? (A string of words and a character)
 
- But it's not yet detailed enough to write code. For instance, what should the function do:
+1. What are the outputs? (A string of words)
 
-1. ...to report errors?
-1. ...if the character isn't found?
-1. ...if the inputs are bad (empty, missing, or not strings at all )?
-1. ...if the input is huge?
-1. ...if the character set is not ASCII?
+1. What is the process? (Some sort of search that examines each word)
+
+But it's not yet detailed enough to write code. For instance, what should the function do:
+
+...to report errors?
+
+...if the character isn't found?
+
+...if the inputs are bad (empty, missing, or not strings at all )?
+
+...if the input is huge?
+
+...if the character set is not ASCII?
  
- So, ask questions until you are sure of the requirement details. (This is actually called requirement elicitation and is a common process on a development team.) Use this checklist to make sure you know what you're doing before you do it. Use it to organize your thinking and demonstrate that you have an rigorous approach to design.
+So, use this RMCP process to ask questions until you are sure of the requirement details. (This is actually called requirement elicitation and is a common process on a development team.) Use this checklist to make sure you know what you're doing before you do it. Use it to organize your thinking and demonstrate that you have an rigorous approach to design.
 
 
 # Step one: The Gazinta - What are the inputs?
@@ -92,6 +96,7 @@ The second step focuses on output. Not necessariy their values, but their types,
 1. **Modified parameters**: Is the routine supposed to modify some parameter that was passed by reference?
 
 1. **Format**: Is there a particular format or template to be used?
+
 
 # Step Three: Test cases are now available
 
